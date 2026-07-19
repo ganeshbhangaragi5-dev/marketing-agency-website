@@ -1,53 +1,135 @@
-/* Tablet and below */
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 16px;
+/* ===== Tablet ===== */
+@media (max-width: 992px) {
+  .hero-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+  .service-grid,
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  nav ul li {
-    list-style: none;
+  .left h1 {
+    font-size: 44px;
   }
 
-  .btn {
-    width: 100%;
-    text-align: center;
-    margin-top: 12px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+  .circle {
+    display: none;
   }
 }
 
-/* Small phones */
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+
+  header {
+    position: fixed;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+
+  .left h1 {
+    font-size: 34px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttons a {
+    text-align: center;
+    width: 100%;
+  }
+
+  .service-grid,
+  .pricing-grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .why-grid h2 {
+    font-size: 30px;
+  }
+
+  .popular {
+    transform: scale(1);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #topBtn {
+    right: 20px;
+    bottom: 85px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ===== Small phones ===== */
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 22px;
+  .left h1 {
+    font-size: 28px;
   }
 
   .logo img {
-    max-width: 120px;
+    height: 45px;
+  }
+
+  .price {
+    font-size: 38px;
+  }
+
+  .service-card,
+  .price-card {
+    padding: 25px 20px;
   }
 }
